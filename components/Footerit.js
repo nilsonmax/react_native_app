@@ -6,7 +6,7 @@ export const FooterIt = () => {
     return (
         <View style={stylesFooter.containerView}>
             <Text style={stylesFooter.containerText}>
-                All right reserved by ITechMax Solutions
+            All rights reserved by ITechMax Solutions, 2024
             </Text>
         </View>
     )
