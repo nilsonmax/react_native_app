@@ -3,6 +3,7 @@ import { View } from 'react-native';
 import { HeaderIT } from './components/Headerit';
 import { FooterIt } from './components/Footerit';
 import { Home } from './components/Home'
+import { Menu } from './components/Menu'
 import { styles } from './styles/styles'
 
 // import Header from './components/header.js'
@@ -12,21 +13,22 @@ export default function App() {
 
     <>
 
-    <View style={styles.container}>
-      {/* <View > */}
+      <View style={styles.container}>
+        {/* <View > */}
         <HeaderIT />
+        <Menu />
 
         {/* <Text>Open up App.js to start working on your app working</Text> */}
         <StatusBar style="auto" />
-      {/* </View> */}
+        {/* </View> */}
 
-      <View style={styles.containerHome}>
-        <Home />
-      </View>
-      {/* <View style={styles.containerFooter}> */}
+        <View style={styles.containerHome}>
+          <Home />
+        </View>
+        {/* <View style={styles.containerFooter}> */}
         <FooterIt />
-      {/* </View> */}
-    </View>
+        {/* </View> */}
+      </View>
     </>
 
   );
