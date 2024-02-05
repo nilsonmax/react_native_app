@@ -2,11 +2,10 @@ import { StatusBar } from 'expo-status-bar';
 import { View } from 'react-native';
 import { HeaderIT } from './components/Headerit';
 import { FooterIt } from './components/Footerit';
-import { Home } from './components/Home'
-import { Menu } from './components/Menu'
-import { styles } from './styles/styles'
-
-// import Header from './components/header.js'
+// import { Home } from './components/Home'
+import MenuItems from './components/MenuItems'
+// import { styles } from './styles/styles'
+import { StyleSheet } from 'react-native'
 
 export default function App() {
   return (
@@ -14,22 +13,22 @@ export default function App() {
     <>
 
       <View style={styles.container}>
-        {/* <View > */}
         <HeaderIT />
-        <Menu />
-
-        {/* <Text>Open up App.js to start working on your app working</Text> */}
-        <StatusBar style="auto" />
-        {/* </View> */}
-
-        <View style={styles.containerHome}>
-          <Home />
-        </View>
-        {/* <View style={styles.containerFooter}> */}
+        <MenuItems />
+        {/* <StatusBar style="auto" /> */}
+      </View>
+      <View style={styles.footerContainer}>
         <FooterIt />
-        {/* </View> */}
       </View>
     </>
 
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#333333',
+  },
+  footerContainer: { backgroundColor: '#333333' },
+});

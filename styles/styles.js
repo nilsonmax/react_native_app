@@ -11,7 +11,7 @@ export const styles = StyleSheet.create({
 export const stylesHeader = StyleSheet.create({
     containerView: {
         flex: 0.22,
-        backgroundColor: '#F4CE14',
+        backgroundColor: '#EE9972',
         alignItems: 'center',
         justifyContent: 'center',
     },
@@ -27,7 +27,7 @@ export const stylesHeader = StyleSheet.create({
 
 export const stylesFooter = StyleSheet.create({
     containerView: {
-        backgroundColor: '#F4CE14',
+        backgroundColor: '#EE9972',
         alignItems: 'center',
         justifyContent: 'center',
     },
