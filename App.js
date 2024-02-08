@@ -4,6 +4,8 @@ import { HeaderIT } from './components/Headerit';
 import { FooterIt } from './components/Footerit';
 // import { Home } from './components/Home'
 import MenuItems from './components/MenuItems'
+import {Contact} from './components/Contact'
+import LoginScreen from './components/LoginScreen'
 // import { styles } from './styles/styles'
 import { StyleSheet } from 'react-native'
 
@@ -14,7 +16,9 @@ export default function App() {
 
       <View style={styles.container}>
         <HeaderIT />
-        <MenuItems />
+        {/* <MenuItems />
+        <Contact /> */}
+        <LoginScreen />
         {/* <StatusBar style="auto" /> */}
       </View>
       <View style={styles.footerContainer}>
